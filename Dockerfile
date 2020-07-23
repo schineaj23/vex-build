@@ -4,9 +4,8 @@ RUN apt-get update
 
 # Install GCC & Clang
 RUN apt-get install build-essential -y
-RUN wget https://apt.llvm.org/llvm.sh
-RUN chmod +x llvm.sh
-RUN sudo ./llvm.sh 8
+RUN apt-get install wget -y
+RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
 # Install needed ARM deps
 RUN apt-get install gcc-arm-none-eabi -y
