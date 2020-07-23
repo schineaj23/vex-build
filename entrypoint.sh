@@ -8,12 +8,8 @@ curl -L https://content.vexrobotics.com/vexcode/v5code/VEXcodeProV5_2_0_0_Previe
 mkdir ~/sdk
 mv sdk_temp/VEXcode\ Pro\ V5.app/Contents/Resources/sdk/* ~/sdk
 rm -fR _vex*_ _vex*_.dmg sdk_temp/ Payload~
+ls ~/sdk # ls just for testing
 
 echo "Building Project"
 # Now make the makefile in the set path
-if [ -z "$1" ]
-then
-    make
-else
-    make --directory=$1
-fi
+make --directory=$1

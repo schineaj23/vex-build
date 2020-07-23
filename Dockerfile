@@ -2,8 +2,9 @@ FROM ubuntu:18.04
 
 RUN apt-get update
 
-# Install GCC 
+# Install GCC & Clang
 RUN apt-get install build-essential -y
+RUN apt-get install clang-8.0 -y
 
 # Install needed ARM deps
 RUN apt-get install gcc-arm-none-eabi -y
