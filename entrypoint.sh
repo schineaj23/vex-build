@@ -11,4 +11,9 @@ rm -fR _vex*_ _vex*_.dmg sdk_temp/ Payload~
 
 echo "Building Project"
 # Now make the makefile in the set path
-make --directory=$1
+if [ "$1" = "."]
+then
+    make
+else
+    make --directory=$1
+fi
