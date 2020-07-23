@@ -1,0 +1,12 @@
+name: 'VEX Build'
+description: 'Build a VEX C++ Pro project'
+inputs:
+  path:
+    description: 'Path to makefile'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
