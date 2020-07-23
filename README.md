@@ -10,5 +10,5 @@ The path to the project makefile. Default `.`.
 ```
 uses: schineaj23/vex-build@v1
 with:
-  path: 'projects/mainproject/'
+  path: projects/mainproject/
 ```
