@@ -4,7 +4,7 @@ RUN apt-get update
 
 # Install GCC & Clang
 RUN apt-get install build-essential -y
-RUN apt-get install clang-10 lldb-10 lld-10 -y
+RUN apt-get install clang -y
 # Install needed ARM deps
 RUN apt-get install gcc-arm-none-eabi -y
 RUN apt-get install binutils-arm-none-eabi -y
