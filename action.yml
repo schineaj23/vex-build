@@ -1,5 +1,8 @@
 name: 'VEX Build'
 description: 'Build a VEX C++ Pro project'
+branding:
+  icon: 'box'  
+  color: 'green'
 inputs:
   path:
     description: 'Path to makefile'
