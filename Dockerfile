@@ -6,10 +6,6 @@ RUN apt-get update
 RUN apt-get install build-essential -y
 RUN apt-get install clang -y
 
-# Symlink so the name matches up with the one provided in makefile
-RUN ln -s /usr/bin/clang-10 /usr/bin/clang
-RUN ln -s /usr/bin/clang++-10 /usr/bin/clang++
-
 # Install needed ARM deps
 RUN apt-get install gcc-arm-none-eabi -y
 RUN apt-get install binutils-arm-none-eabi -y
