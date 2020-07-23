@@ -8,8 +8,6 @@ RUN apt-get install build-essential -y
 # Install needed ARM deps
 RUN apt-get install gcc-arm-none-eabi -y
 RUN apt-get install binutils-arm-none-eabi -y
-RUN apt-get install gdb-arm-none-eabi -y
-RUN apt-get install openocd -y
 
 # Install 7z & cURL
 RUN apt-get install p7zip-full -y
