@@ -4,7 +4,7 @@ RUN apt-get update
 
 # Install GCC & Clang
 RUN apt-get install build-essential -y
-RUN apt-get install clang-8.0 -y
+RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
 # Install needed ARM deps
 RUN apt-get install gcc-arm-none-eabi -y
